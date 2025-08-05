@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Скоростная Гонка</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <div class="main-menu" id="mainMenu">
+        <h1>Скоростная Гонка</h1>
+        <p class="fun-text">Уклоняйся от машин и набери очки!</p>
+        <button id="startBtn">Начать игру</button>
+    </div>
+
+    <div class="game-area" id="gameArea">
+        <div class="lane" style="left: 35%;"></div>
+        <div class="lane" style="left: 50%;"></div>
+        <div class="lane" style="left: 65%;"></div>
+
+        <img src="https://img.itch.zone/aW1nLzE1MTUyMTk4LmdpZg==/315x250%23cm/I%2FTSqa.gif" id="player" width="140"
+            height="120" />
+
+        <div class="scoreboard">
+            Очки: <span id="score">0</span> | Рекорд: <span id="highScore">0</span> | Уровень: <span id="level">1</span>
+        </div>
+
+        <div class="fog" id="fog"></div>
+        <div class="restartBtn-card">
+            <button id="restartBtn">Заново</button>
+            <button id="menuBtn">Меню</button>
+        </div>
+    </div>
+
+    <audio id="bgMusic" src="https://cdn.pixabay.com/audio/2022/07/30/audio_dcc3cfb44c.mp3" loop></audio>
+
+
+    <script src="game.js"></script>
+</body>
+
+</html>
